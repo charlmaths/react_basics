@@ -20,15 +20,43 @@ root.render(
 
 */
 
-function CustomPage1() {
+function Header() {
+  return (
+    <header>
+      <h1> Head title of the page</h1>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+function Footer() {
+  return <footer>2023 - C.Martinez</footer>;
+}
+
+function MainContent() {
   return (
     <div>
-      <h1> I like React</h1>
       <ul>
         <li>reason 1</li>
         <li>reason 2</li>
         <li>reason 3</li>
       </ul>
+    </div>
+  );
+}
+
+function CustomPage1() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
