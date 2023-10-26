@@ -23,9 +23,9 @@ root.render(
 function Header() {
   return (
     <header>
-      <h1> Head title of the page</h1>
       <nav>
-        <ul>
+        <h1> Head title of the page</h1>
+        <ul className="nav-items">
           <li>home</li>
           <li>about</li>
           <li>contact</li>
